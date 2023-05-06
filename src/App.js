@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Plan from './components/Plan';
 import Offer from './components/Offer';
 import Rooms from './components/Rooms';
+import ImageSlider from './components/ImageSlider';
+
 
 const App = () => {
   return (
@@ -13,6 +15,7 @@ const App = () => {
       <Offer/>
       <Plan />
       <Rooms/>
+      <ImageSlider/>
     </div>
   )
 }
