@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import {HiMenuAlt3} from 'react-icons/hi';
 
 const Navbar = () => {
@@ -21,11 +22,11 @@ const Navbar = () => {
                 ? 'fixed ease-in duration-300 text-gray-300 left-0 top-0 w-full h-screen bg-black/90 py-7 flex-col z-10' 
                 :'absolute top-0 h-screen left-[-100%] ease-in duration-500 z-10'}>
             <ul className='flex flex-col fixed w-full h-full items-center justify-center className="font-bold text-3xl p-8"'>
-                <li className="font-bold  p-8">Home</li>
-                <li className="font-bold  p-8">Destinations</li>
-                <li className="font-bold  p-8">Reservations</li>
-                <li className="font-bold  p-8">Amenities</li>
-                <li className="font-bold  p-8">Rooms</li>
+                <Link to="/home" className="font-bold  cursor-wait">Home</Link>
+                <Link to="/destination" className="font-bold   cursor-pointer">Destinations</Link>
+                <Link to="/reservation" className="font-bold   cursor-pointer">Reservations</Link>
+                <Link to="/amenities" className="font-bold   cursor-pointer">Amenities</Link>
+                <Link to="/rooms" className="font-bold   cursor-pointer">Rooms</Link>
             </ul>
         </div>
     </div>
