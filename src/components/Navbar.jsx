@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {HiMenuAlt3} from 'react-icons/hi';
 
 const Navbar = () => {
